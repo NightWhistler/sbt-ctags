@@ -2,11 +2,11 @@ sbtPlugin := true
 
 name := "sbt-ctags"
 
-organization := "net.ceedubs"
+organization := "net.nightwhistler"
 
 description := "An SBT plugin to generate ctags for a project (including its dependencies)"
 
-homepage := Some(url("https://github.com/ceedubs/sbt-ctags"))
+homepage := Some(url("https://github.com/nightwhistler/sbt-ctags"))
 
 startYear := Some(2014)
 
@@ -16,15 +16,13 @@ licenses := Seq(
 
 scmInfo := Some(
   ScmInfo(
-    url("https://github.com/ceedubs/sbt-ctags"),
-    "scm:git:https://github.com/ceedubs/sbt-ctags.git",
-    Some("scm:git:git@github.com:ceedubs/sbt-ctags.git")
+    url("https://github.com/nightwhistler/sbt-ctags"),
+    "scm:git:https://github.com/nightwhistler/sbt-ctags.git",
+    Some("scm:git:git@github.com:nightwhistler/sbt-ctags.git")
   )
 )
 
-// scalaVersion := "2.10.4"
-
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.4"
 
 sbtVersion in Global := "1.0.3"
 

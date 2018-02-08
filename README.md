@@ -1,25 +1,34 @@
 # SBT ctags #
 
+This is is a fork of [ceedubs/sbt-ctags](https://github.com/ceedubs/sbt-ctags) which seems to be no longer maintained.
+I'd like to stress there is virtually no work by me in this repo, beyond merging pull requests which had been made against the original repo.
+All credit goes to the respective authors.
+
 SBT ctags is an SBT plugin that will generate ctags for your Scala project.
 
 It unzips the source jars for your project dependencies and generates ctags for these dependency sources in addition to the Scala/Java source of your project itself.
 
 # Release notes #
 
-Just want to find out what's new in the most recent version? Check out the [release notes](https://github.com/ceedubs/sbt-ctags/tree/master/release-notes).
+Just want to find out what's new in the most recent version? Check out the [release notes](https://github.com/nightwhistler/sbt-ctags/tree/master/release-notes).
 
 # Setting it up #
+
+This fork isn't published yet, so to install it, you'll first need to build it from source and publish it locally:
+
+## Building ##
+
+Run the following command:
+
+```
+sbt ^publishLocal
+```
 
 ## Adding the plugin dependency ##
 
 Add the following to `~/.sbt/0.13/plugins/plugins.sbt` (or wherever you like to configure your global SBT settings):
-```scala
-resolvers ++= Seq(
-  "Sonatype OSS Releases" at "https://oss.sonatype.org/content/repositories/releases/",
-  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
-)
-
-addSbtPlugin("net.ceedubs" %% "sbt-ctags" % "0.2.0")
+```
+addSbtPlugin("net.nightwhistler" %% "sbt-ctags" % "0.4.0")
 ```
 
 Alternatively you can add this plugin to individual SBT projects by adding those lines to `<project-dir>/project/plugins.sbt`.
@@ -63,7 +72,7 @@ Emacswiki has some useful information for [navigating using tags](http://www.ema
 
 # Configuration #
 
-There are a number of configurable settings declared in [SbtCtags.scala](https://github.com/ceedubs/sbt-ctags/blob/master/src/main/scala/net/ceedubs/sbtctags/SbtCtags.scala). The best way to get to know what the configuration options are is probably to browse the `CtagsKeys` object within that file.
+There are a number of configurable settings declared in [SbtCtags.scala](https://github.com/nightwhistler/sbt-ctags/blob/master/src/main/scala/net/ceedubs/sbtctags/SbtCtags.scala). The best way to get to know what the configuration options are is probably to browse the `CtagsKeys` object within that file.
 
 I would suggest putting your sbt-ctags configuration in `~/.sbt/0.13/sbt-ctags.sbt` or something similar.
 
