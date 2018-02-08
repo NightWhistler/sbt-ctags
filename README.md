@@ -26,7 +26,7 @@ sbt ^publishLocal
 
 ## Adding the plugin dependency ##
 
-Add the following to `~/.sbt/0.13/plugins/plugins.sbt` (or wherever you like to configure your global SBT settings):
+Add the following to `~/.sbt/1.0/plugins/plugins.sbt` (or wherever you like to configure your global SBT settings):
 ```
 addSbtPlugin("net.nightwhistler" %% "sbt-ctags" % "0.4.0")
 ```
@@ -74,7 +74,7 @@ Emacswiki has some useful information for [navigating using tags](http://www.ema
 
 There are a number of configurable settings declared in [SbtCtags.scala](https://github.com/nightwhistler/sbt-ctags/blob/master/src/main/scala/net/ceedubs/sbtctags/SbtCtags.scala). The best way to get to know what the configuration options are is probably to browse the `CtagsKeys` object within that file.
 
-I would suggest putting your sbt-ctags configuration in `~/.sbt/0.13/sbt-ctags.sbt` or something similar.
+I would suggest putting your sbt-ctags configuration in `~/.sbt/1.0/sbt-ctags.sbt` or something similar.
 
 ## Languages ##
 
