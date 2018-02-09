@@ -113,5 +113,3 @@ CtagsKeys.ctagsParams ~= (_.copy(
 Be very careful if you are going to change the `dependencySrcUnzipDir` setting. This directory is cleared every time the `gen-ctags` task runs.
 
 This plugin makes some assumptions about your system and how you want tags to be generated. Hopefully the customizable settings make it easy for you to use to your liking. If not, I encourage you to send a pull request to make this plugin more flexible/useful/robust.
-
-Currently I don't think this plugin handles projects with multiple modules well. I think multiple modules could be supported fairly easily, but I haven't needed this feature yet. Again, pull requests are encouraged!
