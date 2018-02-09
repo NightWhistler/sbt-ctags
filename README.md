@@ -14,20 +14,14 @@ Just want to find out what's new in the most recent version? Check out the [rele
 
 # Setting it up #
 
-This fork isn't published yet, so to install it, you'll first need to build it from source and publish it locally:
-
-## Building ##
-
-Run the following command:
-
-```
-sbt ^publishLocal
-```
-
 ## Adding the plugin dependency ##
+
+The plugin is currently published on my personal BinTray repository.
 
 Add the following to `~/.sbt/1.0/plugins/plugins.sbt` (or wherever you like to configure your global SBT settings):
 ```
+resolvers += Resolver.bintrayRepo("nightwhistler", "maven")
+
 addSbtPlugin("net.nightwhistler" %% "sbt-ctags" % "0.4.0")
 ```
 

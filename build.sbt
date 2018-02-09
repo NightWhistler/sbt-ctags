@@ -40,17 +40,7 @@ scalacOptions ++= Seq(
 )
 
 /* publishing */
-publishMavenStyle := true
-
-publishTo := {
-  val v = version.value
-  val nexus = "https://oss.sonatype.org/"
-  if (v.trim.endsWith("SNAPSHOT")) Some(
-    "snapshots" at nexus + "content/repositories/snapshots"
-  )
-  else Some("releases" at nexus + "service/local/staging/deploy/maven2")
-}
-
+publishMavenStyle := false
 publishArtifact in Test := false
 
 pomIncludeRepository := { _ => false }
