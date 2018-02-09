@@ -40,7 +40,7 @@ scalacOptions ++= Seq(
 )
 
 /* publishing */
-publishMavenStyle := false
+publishMavenStyle := true
 publishArtifact in Test := false
 
 pomIncludeRepository := { _ => false }

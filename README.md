@@ -20,7 +20,7 @@ The plugin is currently published on my personal BinTray repository.
 
 Add the following to `~/.sbt/1.0/plugins/plugins.sbt` (or wherever you like to configure your global SBT settings):
 ```
-resolvers += Resolver.bintrayRepo("nightwhistler", "maven")
+resolvers += Resolver.bintrayRepo("nightwhistler", "sbt-plugins")
 
 addSbtPlugin("net.nightwhistler" %% "sbt-ctags" % "0.4.0")
 ```
